@@ -6,8 +6,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "permissions": [
+      "location"
+    ],
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/erp.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,11 +23,24 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "location"
+        ],
+        "googleMapsApiKey": "AIzaSyBCAOGByMxUq5WW3UEGfLVavT2QNwR1pxU"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Mister hani App to use your location."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
